@@ -278,8 +278,8 @@
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
-  -webkit-animation: bounceInLeft 1s 3.1s cubic-bezier(0.4, 0, 1, 1.43) forwards;
-          animation: bounceInLeft 1s 3.1s cubic-bezier(0.4, 0, 1, 1.43) forwards;
+  -webkit-animation: bounceInLeft 4s cubic-bezier(0.4, 0, 1, 1.43) forwards;
+          animation: bounceInLeft 4s cubic-bezier(0.4, 0, 1, 1.43) forwards;
 }
 
 .nav-view__explore:hover {
@@ -332,8 +332,8 @@
       flex-wrap: wrap;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-animation: bounce;
-          animation: bounce;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
 }

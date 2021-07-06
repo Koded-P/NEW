@@ -132,7 +132,7 @@ $breakpoints: (
         transform: scale(1);
         transition-property: transform;
         transition-duration: 400ms;
-        animation: bounceInLeft 1s 3.1s cubic-bezier(0.4, 0, 1, 1.43) forwards;
+        animation: bounceInLeft 4s cubic-bezier(0.4, 0, 1, 1.43) forwards;
         &:hover {
             transform: scale(1.10);
         }
@@ -163,7 +163,7 @@ $breakpoints: (
         flex-direction: row;
         flex-wrap: wrap;
         transition: all 0.4s ease-in-out;
-        animation: bounce;
+        animation: fadeIn;
         animation-duration: 5s; 
         i {
             margin-right: 30px;
