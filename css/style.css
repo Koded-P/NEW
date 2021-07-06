@@ -532,6 +532,25 @@
   font-size: 20px;
 }
 
+.proj-grid .card-box .full__heart {
+  opacity: 0;
+  color: blue;
+  margin: 0px;
+}
+
+.proj-grid .card-box .full__heart:hover {
+  opacity: 1;
+}
+
+.proj-grid .card-box .empty__heart {
+  opacity: 1;
+  margin: 0px;
+}
+
+.proj-grid .card-box .empty__heart:hover {
+  opacity: 0;
+}
+
 .proj-grid .card-box i {
   color: #9356DC;
   font-size: 25px;
@@ -541,11 +560,9 @@
           animation-duration: 400ms;
   -webkit-animation-fill-mode: #9356DC;
           animation-fill-mode: #9356DC;
-  color: #9356DC;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   position: absolute;
-  opacity: 0;
 }
 
 .proj-grid .card-box i:hover {

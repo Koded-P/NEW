@@ -270,20 +270,33 @@ $breakpoints: (
             margin-top: 28px;
             font-size: 20px;
         }
-            i {
-                color: $primary-color; 
-                font-size: 25px;
-                animation: fillheart;
-                animation-duration: 400ms;
-                animation-fill-mode: $primary-color;
-                color: $primary-color;
-                transition: all 0.4s ease-in-out; 
-                position: absolute; 
-                opacity: 0; 
-            }   
-            i:hover {
+        .full__heart {
+            opacity: 0;
+            color: blue;
+            margin: 0px;
+            &:hover {
                 opacity: 1;
-          }
+            }
+        }
+        .empty__heart {
+            opacity: 1;
+            margin: 0px;
+            &:hover {
+                opacity: 0;
+            }
+        }
+        i {
+            color: $primary-color; 
+            font-size: 25px;
+            animation: fillheart;
+            animation-duration: 400ms;
+            animation-fill-mode: $primary-color;
+            transition: all 0.4s ease-in-out; 
+            position: absolute;
+        }   
+        i:hover {
+            opacity: 1;
+        }
     }
         &:nth-child(2) {
             display: flex;
