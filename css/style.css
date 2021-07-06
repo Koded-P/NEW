@@ -421,6 +421,10 @@
           justify-content: center;
   margin-bottom: 25px;
   background-color: #F2F2F2;
+  -webkit-animation: fadeOut;
+          animation: fadeOut;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
 }
 
 .proj-grid .card-box .card-image {

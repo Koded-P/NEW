@@ -218,6 +218,8 @@ $breakpoints: (
         justify-content: center;
         margin-bottom: 25px;
         background-color: $base-color;
+        animation: fadeOut;
+        animation-duration: 400ms;
         .card-image {
             width: 100%;
             margin: auto;
