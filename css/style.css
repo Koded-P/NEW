@@ -270,16 +270,16 @@
   margin-left: 100px;
   margin-bottom: 60px;
   height: 65px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
-  -webkit-animation: bounceInLeft 4s cubic-bezier(0.4, 0, 1, 1.43) forwards;
-          animation: bounceInLeft 4s cubic-bezier(0.4, 0, 1, 1.43) forwards;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
 }
 
 .nav-view__explore:hover {

@@ -129,10 +129,10 @@ $breakpoints: (
         margin-left: 100px;
         margin-bottom: 60px;
         height: 65px;
-        transform: scale(1);
+        transition: all 400ms ease-in-out;
         transition-property: transform;
-        transition-duration: 400ms;
-        animation: bounceInLeft 4s cubic-bezier(0.4, 0, 1, 1.43) forwards;
+        animation: fadeIn;
+        animation-duration: 400ms;
         &:hover {
             transform: scale(1.10);
         }
