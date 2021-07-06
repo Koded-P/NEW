@@ -254,24 +254,25 @@ $breakpoints: (
             object-fit: contain;
         }
         >.heading {
+            border: 1px solid black;
             color: black;
-            padding: 5px;
+            padding: 15px;
             display: flex;
             flex-direction: row;
-            padding: 8px;
             transition: all 0.4s ease-in-out;
         }
         .like-btn {
+            margin-left: auto;
             cursor: pointer;
             display: flex;
             flex-direction: row;
-            margin-top: 16px;
             overflow: hidden;
             margin-top: 28px;
-            font-size: 20px;
+            font-size: 30px;
+            margin-right: 20px;
         }
         .full__heart {
-            margin-right: 50px;
+            margin-right: auto;
             opacity: 0;
             color: blue;
             margin-top: 0px;
@@ -280,6 +281,8 @@ $breakpoints: (
             }
         }
         .empty__heart {
+            border: 1px solid black;
+            margin: -3px;
             opacity: 1;
             margin-top: 0px;
             &:hover {

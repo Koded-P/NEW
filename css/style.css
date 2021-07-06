@@ -503,8 +503,9 @@
 }
 
 .proj-grid .card-box > .heading {
+  border: 1px solid black;
   color: black;
-  padding: 5px;
+  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,12 +513,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 8px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 .proj-grid .card-box .like-btn {
+  margin-left: auto;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,14 +527,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 16px;
   overflow: hidden;
   margin-top: 28px;
-  font-size: 20px;
+  font-size: 30px;
+  margin-right: 20px;
 }
 
 .proj-grid .card-box .full__heart {
-  margin-right: 50px;
+  margin-right: auto;
   opacity: 0;
   color: blue;
   margin-top: 0px;
@@ -544,6 +545,8 @@
 }
 
 .proj-grid .card-box .empty__heart {
+  border: 1px solid black;
+  margin: -3px;
   opacity: 1;
   margin-top: 0px;
 }
