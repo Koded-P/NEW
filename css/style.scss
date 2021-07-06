@@ -239,12 +239,6 @@ $breakpoints: (
             display: flex;
             flex-direction: row;
             padding: 8px;
-            i {
-                font-size: 20px;
-                @include nav-center
-                margin-left: auto;
-                padding: 10px;
-            }
             .card__react {
                 display: flex;
                 flex-direction: row;
@@ -253,19 +247,26 @@ $breakpoints: (
                 top: 16px;
                 overflow: hidden;
                 .empty_heart {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     cursor: pointer;
-                    padding-top: 2px;
-                    background: $primary-color;
+                    margin-top: 25px;
                     transform: translate(-30px, 0);
                     font-size: 26px;
                     height: 30px;
                 }
                 .full_heart {
-                    background: $tertiary-color;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: $primary-color;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     height: 30px;
-                    padding-top: 6px;
+                    margin-top: 25px;
                     font-size: 26px;
                     .empty_heart:hover {
                         animation: fillheart 400ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
