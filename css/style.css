@@ -545,9 +545,10 @@
 
 .proj-grid .card-box .like-btn i {
   color: #9356DC;
+  font-size: 20px;
 }
 
-.proj-grid .card-box .like-btn i i:hover {
+.proj-grid .card-box .like-btn i:hover {
   color: #9356DC;
   overflow: hidden;
   -webkit-transform: translate(-30px, 0);

@@ -278,16 +278,16 @@ $breakpoints: (
             font-size: 15px;
             i {
                 color: $primary-color; 
-                i:hover {
-                    color: $primary-color;
-                    overflow: hidden;
-                    transform: translate(-30px, 0);
-                    animation: fillheart 400ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
-                    transition: all 0.4s ease-in-out;
-                    animation-fill-mode: $primary-color;
-                }
+                font-size: 20px;
             }
-            
+            i:hover {
+                color: $primary-color;
+                overflow: hidden;
+                transform: translate(-30px, 0);
+                animation: fillheart 400ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+                transition: all 0.4s ease-in-out;
+                animation-fill-mode: $primary-color;
+          }
         }
     }
         &:nth-child(2) {
