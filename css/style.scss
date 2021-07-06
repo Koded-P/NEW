@@ -98,7 +98,7 @@ $breakpoints: (
     &__explore {
         border-radius: 50px;
         background-color: $secondary-color; 
-        background: linear-gradient(to top, darken($primary-color, 15%), lighten($secondary-color, 15%));        
+        background: linear-gradient(to top, lighten($primary-color, 3%), lighten($secondary-color, 5%));        
         box-shadow: 0px 10px 10px 0px darken($base-color, 10%); 
         color: white; 
         display: flex;
@@ -144,6 +144,8 @@ $breakpoints: (
         flex-direction: row;
         flex-wrap: wrap;
         transition: all 0.4s ease-in-out;
+        animation: bounce;
+        animation-duration: 5s; 
         i {
             margin-right: 30px;
             display: flex;

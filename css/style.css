@@ -1,3 +1,49 @@
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 * {
   margin: 3px;
   padding: 0px;
@@ -148,8 +194,8 @@
 .nav-view__explore {
   border-radius: 50px;
   background-color: #FF79DA;
-  background: -webkit-gradient(linear, left bottom, left top, from(#6c27be), to(#ffc6ef));
-  background: linear-gradient(to top, #6c27be, #ffc6ef);
+  background: -webkit-gradient(linear, left bottom, left top, from(#9b63df), to(#ff93e1));
+  background: linear-gradient(to top, #9b63df, #ff93e1);
   -webkit-box-shadow: 0px 10px 10px 0px #d9d9d9;
           box-shadow: 0px 10px 10px 0px #d9d9d9;
   color: white;
@@ -180,6 +226,8 @@
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
+  -webkit-animation: bounceInLeft 1s 3.1s cubic-bezier(0.4, 0, 1, 1.43) forwards;
+          animation: bounceInLeft 1s 3.1s cubic-bezier(0.4, 0, 1, 1.43) forwards;
 }
 
 .nav-view__explore:hover {
@@ -230,6 +278,12 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-animation: bounce;
+          animation: bounce;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .col-1__card i {
@@ -248,6 +302,8 @@
       -ms-flex-align: center;
           align-items: center;
   color: #737373;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .col-1__card > .anchor {
