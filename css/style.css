@@ -533,12 +533,13 @@
 
 .proj-grid .card-box .full__heart {
   opacity: 0;
-  color: blue;
   margin-top: 0px;
 }
 
 .proj-grid .card-box .full__heart:hover {
   opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .proj-grid .card-box .empty__heart {
@@ -549,6 +550,8 @@
 
 .proj-grid .card-box .empty__heart:hover {
   opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .proj-grid .card-box i {
@@ -563,10 +566,6 @@
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   position: absolute;
-}
-
-.proj-grid .card-box i:hover {
-  opacity: 1;
 }
 
 .proj-grid:nth-child(2) {

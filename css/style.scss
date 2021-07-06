@@ -271,10 +271,10 @@ $breakpoints: (
         }
         .full__heart {
             opacity: 0;
-            color: blue;
             margin-top: 0px;
             &:hover {
                 opacity: 1;
+                transition: all 0.4s ease-in-out; 
             }
         }
         .empty__heart {
@@ -283,6 +283,7 @@ $breakpoints: (
             margin-top: 0px;
             &:hover {
                 opacity: 0;
+                transition: all 0.4s ease-in-out; 
             }
         }
         i {
@@ -294,9 +295,6 @@ $breakpoints: (
             transition: all 0.4s ease-in-out; 
             position: absolute;
         }   
-        i:hover {
-            opacity: 1;
-        }
     }
         &:nth-child(2) {
             display: flex;
