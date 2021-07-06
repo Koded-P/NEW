@@ -271,16 +271,17 @@ $breakpoints: (
             font-size: 20px;
         }
         .full__heart {
+            margin-right: 50px;
             opacity: 0;
             color: blue;
-            margin: 0px;
+            margin-top: 0px;
             &:hover {
                 opacity: 1;
             }
         }
         .empty__heart {
             opacity: 1;
-            margin: 0px;
+            margin-top: 0px;
             &:hover {
                 opacity: 0;
             }

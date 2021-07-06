@@ -533,9 +533,10 @@
 }
 
 .proj-grid .card-box .full__heart {
+  margin-right: 50px;
   opacity: 0;
   color: blue;
-  margin: 0px;
+  margin-top: 0px;
 }
 
 .proj-grid .card-box .full__heart:hover {
@@ -544,7 +545,7 @@
 
 .proj-grid .card-box .empty__heart {
   opacity: 1;
-  margin: 0px;
+  margin-top: 0px;
 }
 
 .proj-grid .card-box .empty__heart:hover {
