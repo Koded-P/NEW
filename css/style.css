@@ -709,13 +709,32 @@
   }
   .menu .menu_box .selection__box .price {
     border: 1px solid black;
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
-  .menu .menu_box .selection__box .select {
+  .menu .menu_box .selection__box .check {
     border: 1px solid black;
-    display: inline-block;
+    background-color: #99E2D0;
+    position: relative;
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+    -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu .menu_box .selection__box .select:hover {
+  .menu .menu_box .selection__box .check:hover {
     display: none;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
@@ -740,8 +759,10 @@
     background-color: #99E2D0;
   }
   .menu .menu_box i {
-    font-size: 25px;
-    color: #F2F2F2;
+    font-size: 21px;
+    color: white;
+    -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

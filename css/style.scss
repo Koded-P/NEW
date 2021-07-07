@@ -386,13 +386,20 @@ $breakpoints: (
             display: inline-block;
             .price {
                 border: 1px solid black;
-                display: inline-block;
-                
+                display: flex;
+                align-self: flex-end;         
             }
-            .select {
+            .check {
                 border: 1px solid black;
-                display: inline-block;
-
+                background-color: $tertiary-color;
+                position: relative;
+                height: auto;
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0px;
+                transition: all .3s cubic-bezier(.4, 0, .2, 1);
                 &:hover {
                     display: none;
                     transition: all 0.4s ease-in-out;
@@ -412,13 +419,11 @@ $breakpoints: (
         border-radius: 0px 10px 10px 0px;
         background-color: $tertiary-color;
     }
-            i {
-                font-size: 25px;
-                color: $base-color;
-                &:hover {
-                }
-            }
-            
+    i {
+        font-size: 21px;
+        color: white;
+        transition: all .4s cubic-bezier(.4, 0, .2, 1);
+    }            
         }
     }
     .menu-order {
