@@ -381,22 +381,34 @@ $breakpoints: (
         .selection {
             margin-right: auto;
         }
+        .selection__box {
+            border: 1px solid black;
+            display: inline-block;
+            .price {
+                border: 1px solid black;
+                display: inline-block;
+                
+            }
+            .select {
+                border: 1px solid black;
+                display: inline-block;
+
+                &:hover {
+                    display: none;
+                    transition: all 0.4s ease-in-out;
+
+                }
+            }
+        }
         h3 {
             border: 1px solid black;
         }
         h4 {
-            margin-left: auto;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
         }
     .select {
-        display: flex;
-        flex-direction: flex-end;
-        justify-content: center;
-        align-items: center;
-        width: 15%;
-        margin: 0px;
         border-radius: 0px 10px 10px 0px;
         background-color: $tertiary-color;
     }
