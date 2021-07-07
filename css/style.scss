@@ -1,64 +1,12 @@
 @import "./utils/vars";
-
-
-
-
+@import "./utils/mixins";
+@import "./utils/animation";
+@import "./utils/footer";
+@import "./utils/loading";
 
 $breakpoints: (
     mobile: 599px
 );
-
-@keyframes bounceInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-150px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-@keyframes zoomin {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-@keyframes fillheart {
-    0% {
-        transform: translate(-30px, 0);
-        color: $base-color;
-    }
-    100% {
-        transform: translate(-30px, -30px);
-        color: $primary-color;
-    }
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 50%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@mixin nav-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-} 
 
 * {
     margin: 3px;
@@ -107,10 +55,8 @@ $breakpoints: (
         }
     }
     @include mobile-only{
-        display: flex;
+        @include nav-center
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
         height: auto;
     }
     &__location {
@@ -151,11 +97,7 @@ $breakpoints: (
         background: linear-gradient(to top, lighten($primary-color, 3%), lighten($secondary-color, 5%));        
         box-shadow: 0px 10px 10px 0px darken($base-color, 10%); 
         color: white; 
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        @include nav-center;
         width: auto;
         margin-bottom: 60px;
         margin-left: 0px;
@@ -198,18 +140,12 @@ $breakpoints: (
         animation-duration: 5s; 
         i {
             margin-right: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include nav-center;
             color: darken($base-color, 50%);
             transition: all 0.7s ease-in-out;
         }
         >.anchor {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
+            @include nav-center;
             background-color: $primary-color;
             color: $base-color;
             border-radius: 50%;
@@ -219,10 +155,7 @@ $breakpoints: (
             margin-right: 30px;
         }
         >.placeholder {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        @include nav-center;
         }
 
     }
@@ -339,19 +272,7 @@ $breakpoints: (
             }
         }
 }
-
-.footer-box {
-    display: flex;
-    flex-direction: column;
-    background-color: #272524;
-    color: white;
-    padding: 20px;
-    h3 {
-        font-family: 'Shrikhand', cursive;
-        color: white;
-    }
-}
-    
+   
 .header-image {
     display: flex;
     flex-direction: column;
