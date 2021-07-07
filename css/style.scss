@@ -390,21 +390,18 @@ $breakpoints: (
             flex-direction: column;
             justify-content: flex-end;
         }
-    .items {
-        border: 1px solid black;
+    .select {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        flex-direction: flex-end;
+        justify-content: center;
         align-items: center;
+        width: 15%;
         margin: 0px;
         border-radius: 0px 10px 10px 0px;
         background-color: $tertiary-color;
     }
-        .select {
-            
-        }
             i {
-                font-size: 20px;
+                font-size: 25px;
                 color: $base-color;
                 &:hover {
                 }
