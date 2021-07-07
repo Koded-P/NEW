@@ -379,11 +379,29 @@ $breakpoints: (
         box-shadow: 0px 10px 10px 0px darken($base-color, 15%);
         padding: 5px;
         margin-bottom: 15px;
+        h3 {
+            border: 1px solid black;
+        }
         h4 {
             margin-left: auto;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+        }
+        .select {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 15%;
+            margin: -5px;
+            border-radius: 0px 10px 10px 0px;
+            background-color: $tertiary-color;
+            i {
+                font-size: 20px;
+                color: $base-color;
+            }
+            
         }
     }
     .menu-order {

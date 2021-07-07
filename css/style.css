@@ -701,6 +701,9 @@
     padding: 5px;
     margin-bottom: 15px;
   }
+  .menu .menu_box h3 {
+    border: 1px solid black;
+  }
   .menu .menu_box h4 {
     margin-left: auto;
     display: -webkit-box;
@@ -713,6 +716,29 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .menu .menu_box .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 15%;
+    margin: -5px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #99E2D0;
+  }
+  .menu .menu_box .select i {
+    font-size: 20px;
+    color: #F2F2F2;
   }
   .menu .menu-order {
     border-radius: 20px;
