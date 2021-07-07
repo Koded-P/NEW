@@ -382,6 +382,7 @@ $breakpoints: (
         &:hover {
             cursor: pointer;
 
+
         }
         .selection {
             margin-right: auto;
@@ -389,52 +390,36 @@ $breakpoints: (
         .selection__box {
             border: 1px solid black;
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             margin: 0px;
+            width: auto;
             .price {
                 border: 1px solid black;
-                display: flex;
+                display: inline-block;
                 align-self: flex-end;
-                position: relative;
-                width: 100%;      
+                position: relative;     
             }
             .check {
+                display: none;
+            }
+            .check:hover {
+                display: inline-block;
                 border: 1px solid black;
                 background-color: $tertiary-color;
                 border-radius: 0px 10px 10px 0px;
                 position: relative;
                 height: auto;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 0px;
+                width: auto;
                 margin: 0px;
-                transition: all .3s cubic-bezier(.4, 0, .2, 1);
-                &:hover {
-                    display: none;
-                    transition: all 0.4s ease-in-out;
-                }
             }
-        }
-        h3 {
-            border: 1px solid black;
-        }
-        h4 {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-    .select {
-        border-radius: 0px 10px 10px 0px;
-        background-color: $tertiary-color;
-    }
-    i {
-        font-size: 21px;
-        color: white;
-        transition: all .4s cubic-bezier(.4, 0, .2, 1);
-    }            
+            i {
+                font-size: 22px;
+                color: white;    
+            }  
         }
     }
+}
     .menu-order {
         border-radius: 20px;
         display: flex;
@@ -453,4 +438,4 @@ $breakpoints: (
         color: white;
         background: linear-gradient(to top, darken($primary-color, 15%), lighten($primary-color, 5%));
     }
-}
+} 
