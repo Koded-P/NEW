@@ -383,11 +383,12 @@ $breakpoints: (
         }
         .selection__box {
             border: 1px solid black;
-            display: inline-block;
+            display: flex;
             .price {
                 border: 1px solid black;
                 display: flex;
-                align-self: flex-end;         
+                align-self: flex-end;
+                position: relative;      
             }
             .check {
                 border: 1px solid black;

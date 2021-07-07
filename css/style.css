@@ -705,7 +705,9 @@
   }
   .menu .menu_box .selection__box {
     border: 1px solid black;
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .menu .menu_box .selection__box .price {
     border: 1px solid black;
@@ -714,6 +716,7 @@
     display: flex;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    position: relative;
   }
   .menu .menu_box .selection__box .check {
     border: 1px solid black;
