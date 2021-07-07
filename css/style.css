@@ -729,11 +729,11 @@
     position: relative;
   }
   .menu .menu_box .price p {
-    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
   }
   .menu .menu_box .check {
     display: inline-block;
-    border: 1px solid black;
     background-color: #99E2D0;
     border-radius: 0px 10px 10px 0px;
     position: relative;
