@@ -1,13 +1,18 @@
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+@mixin mintablet {
+    @media screen and (max-width: map-get($largescreens, tablet)){
+        @content;
+    }    
+}
+
 @mixin nav-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-}
-
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
 }
