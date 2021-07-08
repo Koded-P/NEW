@@ -37,12 +37,9 @@ a {
 
 /*nav-start*/
 .nav-view {
-    @include mintablet {
-    }
     background-color: $base-color;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;  
+    flex-direction: column;
     align-items: center;
     &__location {
         width: 97.5%;
@@ -53,19 +50,8 @@ a {
             margin-right: -50px;
         }
     }
-    .placeholder {
-
-    }
-    &__explore {
-        margin-left: 200px;
-        p{
-        }
-    }
     &__info {
         margin-top: 60px;
-        p {
-
-        }
     }
     @include mobile-only{
         @include nav-center
