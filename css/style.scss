@@ -188,18 +188,37 @@ a {
             align-items: center;
             margin-left: auto;
         }
-        @include mobile-only {
-            justify-content: left;
-        }
-            i {
-                margin-right: 30px;
+        @include mobile-only {    
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            &__card {
+                width: 100%;
+                display: flex;
+                flex-direction: center;
+                justify-content: center;
+                margin-left: 0px;
+                margin-right: 0px;
+                align-items: center;
+                >:nth-child(3) {
+                    margin-right: auto;
+                    margin-top: 15px;
+                    margin-bottom: 15px;  
+                }
+                >.anchor {
+                    margin-left: -10px;
+                }
+                i {
+                    margin-right: 30px;
+                    @include nav-center;
+                    color: darken($base-color, 50%);
+                    transition: all 0.7s ease-in-out;
+                }
+                >.placeholder {
                 @include nav-center;
-                color: darken($base-color, 50%);
-                transition: all 0.7s ease-in-out;
+                }
             }
-            >.placeholder {
-            @include nav-center;
-            }    
+        }
 }
 /*column-end*/
 
