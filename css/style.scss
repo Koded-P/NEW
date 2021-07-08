@@ -163,6 +163,17 @@ a {
         width: auto;
         justify-content: center;
         align-items: center; 
+        >.anchor {
+            @include nav-center;
+            background-color: $primary-color;
+            color: $base-color;
+            border-radius: 50%;
+            padding: 5px;
+            width: 4%;
+            margin-left: -20px;
+            margin-right: 30px;
+
+        }
         @include mintablet{
             background-color: $base-color;
             box-shadow: 0px 10px 10px 0px darken($base-color, 5%);
@@ -188,24 +199,11 @@ a {
                 color: darken($base-color, 50%);
                 transition: all 0.7s ease-in-out;
             }
-            >.anchor {
-                @include nav-center;
-                background-color: $primary-color;
-                color: $base-color;
-                border-radius: 50%;
-                padding: 5px;
-                width: 4%;
-                margin-left: -20px;
-                margin-right: 30px;
-            }
             >.placeholder {
             @include nav-center;
             }
         }
         }
-        @include mobile-only {
-
-    }
 }
 /*column-end*/
 
