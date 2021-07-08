@@ -357,46 +357,54 @@ a {
         background-color: white;
         box-shadow: 0px 10px 10px 0px darken($base-color, 15%);
         margin-bottom: 15px;
+        padding: 5px;
         &:hover {
             cursor: pointer;
         }
         .selection {
             margin-right: auto;
+            border: 1px solid black;
         }
         .selection__box {
             display: flex;
-            margin: 0px;
-        }
-        .selection__box:hover {
-            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            margin: 0px;
+            border: 1px solid black;
         }
             .price {
-                display: inline-block;
-                position: relative;
+                display: block;
                 p {
                     font-family: 'Roboto', sans-serif;
                     font-weight: 900;
                 }    
             }
             .check {
-                display: inline-block;
+                display: none;
+                color: white;
+            }
+            :hover {
+                >.price {
+                    display: inline-block;
+                    margin-left: -50px;
+                }
+                >.check {
+                @include nav-center
                 background-color: $tertiary-color;
                 border-radius: 0px 10px 10px 0px;
-                position: relative;
-                height: auto;
-                width: auto;
+                position: absolute;
+                height: 10%;
+                width: 10%;
                 margin: 0px;
                 transform: translateX(0px);
                 transform-origin: right;
                 transition-duration: 500ms;
-                i:hover {
-                    font-size: 22px;
-                    color: white;    
-                }
             }
+                i:hover {
+                display: flex;
+                font-size: 30px;
+                color: white;    
+            }
+
         }
     }
     .menu-order {
@@ -417,4 +425,4 @@ a {
         color: white;
         background: linear-gradient(to top, darken($primary-color, 15%), lighten($primary-color, 5%));
     }
-} 
+} }
