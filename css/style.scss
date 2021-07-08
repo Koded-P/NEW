@@ -1,16 +1,19 @@
+/*imported-files*/
 @import "./utils/vars";
 @import "./utils/mixins";
 @import "./utils/animation";
 @import "./utils/footer";
 @import "./utils/loading";
 
+/*media-queries*/
 $breakpoints: (
     mobile: 768px
 );
 $largescreens: (
     tablet: 1024px
 );
-/**/
+
+/*General-selector*/
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -19,13 +22,17 @@ a {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
+
+/*start-heading-style*/
 .header-logo {
     @include nav-center;
     img {
         height: 30px;
     }
 }
+/*end-heading-style*/
 
+/*nav-start*/
 .nav-view {
     @include mintablet {
     }
@@ -114,7 +121,9 @@ a {
         }
     }
 }
+/*nav-end*/
 
+/*column-start*/
 .col-1 {
     @include mintablet {
         display: flex;
@@ -178,7 +187,9 @@ a {
 
     }
 }
+/*column-end*/
 
+/*body-start*/
 .body {
     background-color: $base-color;
     grid-template-columns: 1fr 1fr;
@@ -203,6 +214,7 @@ a {
         font-size: 25px;
     }
 }
+/*card-styles-start*/
 .proj-grid {
     color: $base-color;
     padding: 10px;
@@ -297,7 +309,10 @@ a {
             }
         }
 }
-   
+/*card-styles-end*/
+
+/*page-two-styles*/
+/*header-styles-start*/
 .header-image {
     display: flex;
     flex-direction: column;
@@ -311,7 +326,9 @@ a {
         border: 10px;
     }
 }
+/*header-styles-end*/
 
+/*menu-styles-start*/
 .menu {
     margin-top: -100px;
     display: grid;
