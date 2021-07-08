@@ -12,6 +12,9 @@ $breakpoints: (
 $largescreens: (
     tablet: 1024px
 );
+$x-large: (
+    laptop: 1680px
+);
 
 /*General-selector*/
 * {
@@ -125,6 +128,8 @@ a {
 
 /*column-start*/
 .col-1 {
+    display: flex;
+    flex-direction: row;
     @include mintablet {
         display: flex;
         flex-direction: column;
@@ -143,6 +148,21 @@ a {
         font-size: 25px;
     }
     &__card {
+        background-color: $base-color;
+        box-shadow: 0px 10px 10px 0px darken($base-color, 5%);
+        border-radius: 15px;
+        padding: 15px;
+        font-weight: 500;
+        margin: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        transition: all 0.4s ease-in-out;
+        animation: fadeIn;
+        animation-duration: 5s; 
+        width: auto;
+        justify-content: center;
+        align-items: center; 
         @include mintablet{
             background-color: $base-color;
             box-shadow: 0px 10px 10px 0px darken($base-color, 5%);

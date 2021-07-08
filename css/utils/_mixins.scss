@@ -8,6 +8,11 @@
         @content;
     }    
 }
+@mixin largescreens {
+    @media screen and (max-width: map-get($x-large, laptop)){
+        @content;
+    }
+}
 
 @mixin nav-center {
     display: flex;

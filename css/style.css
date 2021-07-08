@@ -404,6 +404,16 @@ a {
 
 /*nav-end*/
 /*column-start*/
+.col-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 @media screen and (max-width: 1024px) {
   .col-1 {
     display: -webkit-box;
@@ -436,6 +446,38 @@ a {
 .col-1__heading {
   font-weight: 600;
   font-size: 25px;
+}
+
+.col-1__card {
+  background-color: #F2F2F2;
+  -webkit-box-shadow: 0px 10px 10px 0px #e5e5e5;
+          box-shadow: 0px 10px 10px 0px #e5e5e5;
+  border-radius: 15px;
+  padding: 15px;
+  font-weight: 500;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 1024px) {
