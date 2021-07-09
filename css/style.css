@@ -655,6 +655,21 @@ a {
 }
 
 /*card-styles-start*/
+@media screen and (max-width: 1680px) {
+  .proj-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+}
+
 .proj-grid .card-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -815,6 +830,7 @@ a {
 }
 
 .proj-grid:nth-child(2) img {
+  border: 1px solid black;
   height: 250px;
   max-width: 100%;
   -o-object-fit: cover;
