@@ -364,9 +364,26 @@ a {
 /*menu-styles-start*/
 .menu {
     margin-top: -100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;'
+    padding: 15px;
     background-color: $base-color;
+    >.menu-logo {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        h3 {
+            font-family: 'Shrikhand', cursive;
+            font-size: 30px;
+        }
+        i {
+            margin-left: auto;
+            font-size: 25px;
+        }
+    }
     @include mobile-only{
         display: flex;
         flex-direction: column;
