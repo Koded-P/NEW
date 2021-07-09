@@ -388,14 +388,11 @@ a {
         }
     }
     .menu-cards {
-        border: 1px solid black;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
         width: 100%;
-        >.headline {
-        border: 1px solid black;
-        position: relative;
+        h4 {
         text-decoration: underline;
         text-decoration-thickness: 5px;
         text-decoration-color: lighten(#0fd687, 35%);
@@ -410,7 +407,6 @@ a {
         margin-bottom: 15px;
         margin-top: 10px;
         padding: 10px;
-        border: 1px solid black;
         width: auto;
         &:hover {
             cursor: pointer;
@@ -476,7 +472,7 @@ a {
         color: white;
         background: linear-gradient(to top, darken($primary-color, 15%), lighten($primary-color, 5%));
     }
-    @include mobile-only{
+    @include mobile-only{   
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -484,10 +480,10 @@ a {
         height: auto;
         padding: 15px;
         border-radius: 30px;
-    >.menu-logo {
-        margin-top: 15px;
-        display: flex;
-        flex-direction: row;
+        >.menu-logo {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
         h3 {
             font-family: 'Shrikhand', cursive;
             font-size: 30px;
@@ -495,6 +491,11 @@ a {
         i {
             margin-left: auto;
             font-size: 25px;
+        }
+        .menu-cards {
+            border: 1px solid black;
+            display: flex;
+
         }
     }
 }
