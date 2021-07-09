@@ -455,7 +455,7 @@ a {
         }
     }
     ~.menu-order {
-        border-radius: 20px;
+        border-radius: 50px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -463,10 +463,11 @@ a {
         align-items: center;
         margin-bottom: 60px;
         margin-top: 20px;
-        padding: 10px;
+        padding: 5px;
+        width: 30%;
         background-color: $primary-color;
         color: white;
-        background: linear-gradient(to top, darken($primary-color, 15%), lighten($primary-color, 5%));
+        background: linear-gradient(to top, darken($primary-color, 5%), lighten($secondary-color, 5%));
     }
     @include mobile-only{   
         display: flex;

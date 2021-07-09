@@ -1027,7 +1027,7 @@ a {
 }
 
 .menu .menu-cards ~ .menu-order {
-  border-radius: 20px;
+  border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,11 +1045,12 @@ a {
           align-items: center;
   margin-bottom: 60px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 5px;
+  width: 30%;
   background-color: #9356DC;
   color: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(#6c27be), to(#a16be0));
-  background: linear-gradient(to top, #6c27be, #a16be0);
+  background: -webkit-gradient(linear, left bottom, left top, from(#8641d8), to(#ff93e1));
+  background: linear-gradient(to top, #8641d8, #ff93e1);
 }
 
 @media screen and (max-width: 768px) {
