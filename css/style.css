@@ -655,19 +655,8 @@ a {
 }
 
 /*card-styles-start*/
-.proj-grid {
-  color: #F2F2F2;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .proj-grid .card-box {
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,6 +666,7 @@ a {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 10px;
 }
 
 .proj-grid .card-box > .heading {

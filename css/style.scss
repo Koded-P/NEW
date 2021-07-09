@@ -236,14 +236,12 @@ a {
 }
 /*card-styles-start*/
 .proj-grid {
-    color: $base-color;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
     .card-box {
+        border: 1px solid black;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin: 10px;
         >.heading {
             margin-left: 20px;
         }
