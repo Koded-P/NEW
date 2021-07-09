@@ -226,12 +226,12 @@ a {
         height: auto;
     }
     >.heading {
+        margin-left: 20px;
+        font-size: 25px;
         @include mintablet {
             width: 100%;
         }
-        margin-top: 50px;
-        margin-bottom: 20px;
-        font-size: 25px;
+
     }
 }
 /*card-styles-start*/
@@ -244,6 +244,9 @@ a {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        >.heading {
+            margin-left: 20px;
+        }
     }
     @include mobile-only{
         display: flex;

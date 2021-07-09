@@ -644,8 +644,7 @@ a {
 }
 
 .body > .heading {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-left: 20px;
   font-size: 25px;
 }
 
@@ -678,6 +677,10 @@ a {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.proj-grid .card-box > .heading {
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
