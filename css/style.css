@@ -918,11 +918,14 @@ a {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
   width: 100%;
 }
 
 .menu .menu-cards > .headline {
-  margin-top: 20px;
+  border: 1px solid black;
+  position: relative;
   text-decoration: underline;
   text-decoration-thickness: 5px;
   -webkit-text-decoration-color: #9ff8d5;

@@ -391,9 +391,11 @@ a {
         border: 1px solid black;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
         width: 100%;
         >.headline {
-        margin-top: 20px;
+        border: 1px solid black;
+        position: relative;
         text-decoration: underline;
         text-decoration-thickness: 5px;
         text-decoration-color: lighten(#0fd687, 35%);
