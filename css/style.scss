@@ -237,11 +237,16 @@ a {
 /*card-styles-start*/
 .proj-grid {
     .card-box {
-        border: 1px solid black;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
-        margin: 10px;
+        margin: 5px;
+        .card-image {
+            width: auto;
+        }
+        img {
+            margin: 0px;
+        } 
         >.heading {
             margin-left: 20px;
         }
