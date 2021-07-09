@@ -881,18 +881,25 @@ a {
           align-items: center;
   padding: 15px;
   background-color: #F2F2F2;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .menu > .menu-logo {
   margin-top: 15px;
-  border: 1px solid black;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu > .menu-logo h3 {
@@ -906,24 +913,16 @@ a {
 }
 
 .menu .menu-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 50%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  border: 1px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
 
 .menu .menu-cards > .headline {
   margin-top: 20px;
-  margin-bottom: 20px;
   text-decoration: underline;
   text-decoration-thickness: 5px;
   -webkit-text-decoration-color: #9ff8d5;
@@ -945,6 +944,10 @@ a {
   -webkit-box-shadow: 0px 10px 10px 0px #cccccc;
           box-shadow: 0px 10px 10px 0px #cccccc;
   margin-bottom: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  width: auto;
 }
 
 .menu .menu-cards > .menu_box:hover {
