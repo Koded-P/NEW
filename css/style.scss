@@ -454,7 +454,7 @@ a {
             }
         }
     }
-    .menu-order {
+    ~.menu-order {
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -463,10 +463,6 @@ a {
         align-items: center;
         margin-bottom: 60px;
         margin-top: 20px;
-        height: auto;
-        max-width: 200px;
-        margin-right: 100px;
-        margin-left: 120px;
         padding: 10px;
         background-color: $primary-color;
         color: white;
@@ -476,9 +472,7 @@ a {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
         height: auto;
-        padding: 15px;
         border-radius: 30px;
         >.menu-logo {
             margin-top: 15px;

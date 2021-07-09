@@ -1026,7 +1026,7 @@ a {
   color: white;
 }
 
-.menu .menu-cards .menu-order {
+.menu .menu-cards ~ .menu-order {
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1045,10 +1045,6 @@ a {
           align-items: center;
   margin-bottom: 60px;
   margin-top: 20px;
-  height: auto;
-  max-width: 200px;
-  margin-right: 100px;
-  margin-left: 120px;
   padding: 10px;
   background-color: #9356DC;
   color: white;
@@ -1067,11 +1063,7 @@ a {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     height: auto;
-    padding: 15px;
     border-radius: 30px;
   }
   .menu .menu-cards > .menu-logo {
