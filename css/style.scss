@@ -367,14 +367,14 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    height: auto;'
+    align-items: center;
     padding: 15px;
     background-color: $base-color;
     >.menu-logo {
         margin-top: 15px;
+        border: 1px solid black;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         h3 {
             font-family: 'Shrikhand', cursive;
             font-size: 30px;
@@ -384,39 +384,20 @@ a {
             font-size: 25px;
         }
     }
-    @include mobile-only{
+    .menu-cards {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        padding: 15px;
-        border-radius: 30px;
-    >.menu-logo {
-        margin-top: 15px;
-        display: flex;
-        flex-direction: row;
-        h3 {
-            font-family: 'Shrikhand', cursive;
-            font-size: 30px;
-        }
-        i {
-            margin-left: auto;
-            font-size: 25px;
-        }
-    }
-    >.menu-cards {
-        display: flex;
-        flex-direction: column;
-    }
-    .headline {
+        width: 50%;
+        justify-content: space-evenly;
+        >.headline {
         margin-top: 20px;
         margin-bottom: 20px;
         text-decoration: underline;
         text-decoration-thickness: 5px;
         text-decoration-color: lighten(#0fd687, 35%);
-    }
-    .menu_box {
+        }
+        >.menu_box {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -468,7 +449,6 @@ a {
                 font-size: 30px;
                 color: white;    
             }
-
         }
     }
     .menu-order {
@@ -489,4 +469,26 @@ a {
         color: white;
         background: linear-gradient(to top, darken($primary-color, 15%), lighten($primary-color, 5%));
     }
+    @include mobile-only{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 15px;
+        border-radius: 30px;
+    >.menu-logo {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        h3 {
+            font-family: 'Shrikhand', cursive;
+            font-size: 30px;
+        }
+        i {
+            margin-left: auto;
+            font-size: 25px;
+        }
+    }
+}
 } }
