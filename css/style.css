@@ -261,14 +261,46 @@
   width: auto;
 }
 
-.menu_box :hover {
+.menu_box:hover {
   cursor: pointer;
 }
 
+.menu_box:hover .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_box:hover .tick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  margin-left: auto;
+}
+
+.menu_box:hover .tick i {
+  color: white;
+}
+
 .menu_box .menuItems__description {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   margin-right: auto;
 }
 
@@ -298,47 +330,12 @@
           align-items: flex-end;
 }
 
-.menu_box .price p {
+.menu_box .price span {
   font-weight: 600;
 }
 
 .menu_box .tick {
   display: none;
-}
-
-:hover .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-:hover .tick {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #99E2D0;
-  border-radius: 0px 10px 10px 0px;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  margin-left: auto;
-}
-
-:hover .tick i {
-  color: white;
 }
 
 .menu-order {
