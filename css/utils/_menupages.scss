@@ -81,14 +81,14 @@
                     font-weight: 600;
                 }
             }
-            .check {
-                display: none
+            .tick {
+                display: none;
             }
             :hover {
-                >.price {
+                .price {
                     display: inline-block;
                 }
-                >.check {
+                .tick {
                 @include nav-center;
                 background-color: $tertiary-color;
                 border-radius: 0px 10px 10px 0px;
@@ -104,7 +104,7 @@
             }
         }
     }
-    ~.menu-order {
+    .menu-order {
         border-radius: 50px;
         display: flex;
         flex-direction: column;

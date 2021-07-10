@@ -323,15 +323,15 @@
   font-weight: 600;
 }
 
-.menuItems .menu_box .check {
+.menuItems .menu_box .tick {
   display: none;
 }
 
-.menuItems .menu_box :hover > .price {
+.menuItems .menu_box :hover .price {
   display: inline-block;
 }
 
-.menuItems .menu_box :hover > .check {
+.menuItems .menu_box :hover .tick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +366,7 @@
   font-size: 30px;
 }
 
-.menuItems ~ .menu-order {
+.menuItems .menu-order {
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
