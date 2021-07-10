@@ -276,15 +276,16 @@
   width: auto;
 }
 
-.menuItems .menu_box:hover {
-  cursor: pointer;
-}
-
 .menuItems .menu_box .menuItems__description {
   margin-right: auto;
 }
 
+.menuItems .menu_box .menuItems__description h4 {
+  text-decoration: none;
+}
+
 .menuItems .menu_box .menuItems__confirmation {
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,6 +299,7 @@
 
 .menuItems .menu_box .price {
   display: block;
+  border: 1px solid black;
 }
 
 .menuItems .menu_box .price p {
