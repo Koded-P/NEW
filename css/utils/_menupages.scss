@@ -61,6 +61,7 @@
         padding: 10px;
         width: auto;
         .menuItems__description {
+            border: 1px solid black;
             margin-right: auto;
             h4 {
                 text-decoration: none;
@@ -73,7 +74,7 @@
             flex-wrap: wrap;
         }
             .price {
-                display: block;
+                display: flex;
                 border: 1px solid black;
                 @include nav-center;
                 align-items: flex-end;
@@ -82,7 +83,11 @@
                 }
             }
             .tick {
-                display: none;
+                display: flex;
+                i {
+                    display: none;
+                    @include nav-center;
+                }
             }
             :hover {
                 .price {

@@ -276,6 +276,7 @@
 }
 
 .menuItems .menu_box .menuItems__description {
+  border: 1px solid black;
   margin-right: auto;
 }
 
@@ -297,10 +298,10 @@
 }
 
 .menuItems .menu_box .price {
-  display: block;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -324,7 +325,28 @@
 }
 
 .menuItems .menu_box .tick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuItems .menu_box .tick i {
   display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menuItems .menu_box :hover .price {
