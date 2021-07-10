@@ -203,9 +203,6 @@
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #F2F2F2;
   border-radius: 20px 20px 0px 0px;
 }
