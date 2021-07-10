@@ -239,6 +239,7 @@
 }
 
 .menuItems {
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,8 +257,7 @@
           text-decoration-color: #9ff8d5;
 }
 
-.menuItems .menu_box {
-  border: 1px solid black;
+.menu_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,16 +274,16 @@
   width: auto;
 }
 
-.menuItems .menu_box .menuItems__description {
+.menu_box .menuItems__description {
   border: 1px solid black;
   margin-right: auto;
 }
 
-.menuItems .menu_box .menuItems__description h4 {
+.menu_box .menuItems__description h4 {
   text-decoration: none;
 }
 
-.menuItems .menu_box .menuItems__confirmation {
+.menu_box .menuItems__confirmation {
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +296,7 @@
       flex-wrap: wrap;
 }
 
-.menuItems .menu_box .price {
+.menu_box .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,21 +319,21 @@
           align-items: flex-end;
 }
 
-.menuItems .menu_box .price p {
+.menu_box .price p {
   font-weight: 600;
 }
 
-.menuItems .menu_box .tick {
+.menu_box .tick {
   display: none;
 }
 
-.menuItems .menu_box :hover .price {
+.menu_box :hover .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.menuItems .menu_box :hover .tick {
+.menu_box :hover .tick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,7 +358,7 @@
           transition-duration: 500ms;
 }
 
-.menuItems .menu_box :hover i {
+.menu_box :hover i {
   color: white;
 }
 

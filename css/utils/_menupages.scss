@@ -40,6 +40,7 @@
     }
 }
 .menuItems {
+        border: 1px solid black;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -48,55 +49,54 @@
         text-decoration-thickness: 5px;
         text-decoration-color: lighten(#0fd687, 35%);
     }
-    .menu_box {
+}
+.menu_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 10px 0px darken($base-color, 15%);
+    width: auto;
+    .menuItems__description {
+        border: 1px solid black;
+        margin-right: auto;
+        h4 {
+            text-decoration: none;
+        }
+    }
+    .menuItems__confirmation {
         border: 1px solid black;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        border-radius: 10px;
-        background-color: white;
-        box-shadow: 0px 10px 10px 0px darken($base-color, 15%);
-        width: auto;
-        .menuItems__description {
-            border: 1px solid black;
-            margin-right: auto;
-            h4 {
-                text-decoration: none;
-            }
+    }
+    .price {
+        display: flex;
+        border: 1px solid black;
+        @include nav-center;
+        align-items: flex-end;
+        p {
+            font-weight: 600;
         }
-        .menuItems__confirmation {
-            border: 1px solid black;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
+    }
+    .tick {
+        display: none;
+    }
+    :hover {
         .price {
             display: flex;
-            border: 1px solid black;
-            @include nav-center;
-            align-items: flex-end;
-            p {
-                font-weight: 600;
-            }
         }
         .tick {
-            display: none;
+            @include nav-center;
+            background-color: $tertiary-color;
+            border-radius: 0px 10px 10px 0px;
+            position: relative;
+            transform-origin: right;
+            transition-duration: 500ms;
         }
-        :hover {
-            .price {
-                display: flex;
-            }
-            .tick {
-                @include nav-center;
-                background-color: $tertiary-color;
-                border-radius: 0px 10px 10px 0px;
-                position: relative;
-                transform-origin: right;
-                transition-duration: 500ms;
-            }
-            i {
-                color: white;
-            }
+        i {
+            color: white;
         }
     }
 }
