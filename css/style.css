@@ -1,3 +1,4 @@
+/*media-queries*/
 /*imported-files*/
 @-webkit-keyframes loading-2 {
   from {
@@ -168,7 +169,6 @@
           animation: loading-2 0.3s ease-in-out infinite alternate;
 }
 
-/*media-queries*/
 /*General-selector*/
 * {
   font-family: 'Roboto', sans-serif;
