@@ -40,9 +40,8 @@
     }
 }
 .menuItems {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         h4 {
         text-decoration: underline;
@@ -50,6 +49,7 @@
         text-decoration-color: lighten(#0fd687, 35%);
     }
     .menu_box {
+        border: 1px solid black;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
