@@ -20,7 +20,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding: 15px;
     background-color: $base-color;
     border-radius: 20px 20px 0px 0px;
     .menu-logo {
@@ -75,24 +74,25 @@
         }
             .price {
                 display: block;
-                border: 1px solid black; 
+                border: 1px solid black;
+                @include nav-center;
+                align-items: flex-end;
+                p {
+                    font-weight: 600;
+                }
             }
             .check {
-                display: none;
-                color: white;
+                display: none
             }
             :hover {
                 >.price {
                     display: inline-block;
-                    margin-left: -99px;
                 }
                 >.check {
                 @include nav-center;
                 background-color: $tertiary-color;
                 border-radius: 0px 10px 10px 0px;
                 position: relative;
-                height: 10%;
-                width: 10%;
                 margin-left: -50px;
                 transform: translateX(0px);
                 transform-origin: right;
@@ -100,8 +100,7 @@
             }
                 i:hover {
                 display: flex;
-                font-size: 30px;
-                color: white;    
+                font-size: 30px;   
             }
         }
     }
