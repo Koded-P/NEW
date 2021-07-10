@@ -83,11 +83,7 @@
                 }
             }
             .tick {
-                display: flex;
-                i {
-                    display: none;
-                    @include nav-center;
-                }
+                display: none;
             }
             :hover {
                 .price {
@@ -98,7 +94,6 @@
                 background-color: $tertiary-color;
                 border-radius: 0px 10px 10px 0px;
                 position: relative;
-                margin-left: -50px;
                 transform: translateX(0px);
                 transform-origin: right;
                 transition-duration: 500ms;

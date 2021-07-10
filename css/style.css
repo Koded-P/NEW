@@ -325,28 +325,7 @@
 }
 
 .menuItems .menu_box .tick {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menuItems .menu_box .tick i {
   display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .menuItems .menu_box :hover .price {
@@ -372,7 +351,6 @@
   background-color: #99E2D0;
   border-radius: 0px 10px 10px 0px;
   position: relative;
-  margin-left: -50px;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
   -webkit-transform-origin: right;
