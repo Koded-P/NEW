@@ -254,6 +254,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border-radius: 10px;
   background-color: white;
   -webkit-box-shadow: 0px 10px 10px 0px #cccccc;
@@ -293,7 +297,6 @@
           transform-origin: right;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
-  margin-left: auto;
 }
 
 .menu_box:hover .tick i {
@@ -301,7 +304,11 @@
 }
 
 .menu_box .menuItems__description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-right: auto;
+  border: 1px solid black;
 }
 
 .menu_box .menuItems__description h4 {
@@ -328,6 +335,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  border: 1px solid black;
 }
 
 .menu_box .price span {

@@ -50,6 +50,7 @@
 }
 .menu_box {
     display: flex;
+    flex-direction: row;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 10px 10px 0px darken($base-color, 15%);
@@ -65,14 +66,15 @@
             border-radius: 0px 10px 10px 0px;
             transform-origin: right;
             transition-duration: 500ms;
-            margin-left: auto;
             i {
                 color: white;
             }
         }
     }
     .menuItems__description {
+        flex: 1;
         margin-right: auto;
+        border: 1px solid black;
         h4 {
             text-decoration: none;
         }
@@ -81,6 +83,7 @@
         display: flex;
         @include nav-center;
         align-items: flex-end;
+        border: 1px solid black;
         span {
             font-weight: 600;
         }
