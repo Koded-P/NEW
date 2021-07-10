@@ -191,8 +191,7 @@
   border: 10px;
 }
 
-/*header-styles-end*/
-/*menu-styles-start*/
+/*menu*/
 .menu {
   margin-top: -100px;
   display: -webkit-box;
@@ -212,7 +211,7 @@
   border-radius: 20px 20px 0px 0px;
 }
 
-.menu > .menu-logo {
+.menu .menu-logo {
   margin-top: 15px;
   width: 100%;
   display: -webkit-box;
@@ -230,17 +229,17 @@
           align-items: center;
 }
 
-.menu > .menu-logo h3 {
+.menu h3 {
   font-family: 'Shrikhand', cursive;
   font-size: 30px;
 }
 
-.menu > .menu-logo i {
+.menu i {
   margin-left: auto;
   font-size: 25px;
 }
 
-.menu .menu-cards {
+.menu-cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -250,14 +249,14 @@
   width: 100%;
 }
 
-.menu .menu-cards h4 {
+.menu-cards h4 {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   -webkit-text-decoration-color: #9ff8d5;
           text-decoration-color: #9ff8d5;
 }
 
-.menu .menu-cards > .menu_box {
+.menu-cards > .menu_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,15 +276,15 @@
   width: auto;
 }
 
-.menu .menu-cards > .menu_box:hover {
+.menu-cards > .menu_box:hover {
   cursor: pointer;
 }
 
-.menu .menu-cards > .menu_box .selection {
+.menu-cards > .menu_box .selection {
   margin-right: auto;
 }
 
-.menu .menu-cards > .menu_box .selection__box {
+.menu-cards > .menu_box .selection__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,26 +296,26 @@
       flex-wrap: wrap;
 }
 
-.menu .menu-cards > .menu_box .price {
+.menu-cards > .menu_box .price {
   display: block;
 }
 
-.menu .menu-cards > .menu_box .price p {
+.menu-cards > .menu_box .price p {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
 }
 
-.menu .menu-cards > .menu_box .check {
+.menu-cards > .menu_box .check {
   display: none;
   color: white;
 }
 
-.menu .menu-cards > .menu_box :hover > .price {
+.menu-cards > .menu_box :hover > .price {
   display: inline-block;
   margin-left: -99px;
 }
 
-.menu .menu-cards > .menu_box :hover > .check {
+.menu-cards > .menu_box :hover > .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,7 +345,7 @@
           transition-duration: 500ms;
 }
 
-.menu .menu-cards > .menu_box :hover i:hover {
+.menu-cards > .menu_box :hover i:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,7 +353,7 @@
   color: white;
 }
 
-.menu .menu-cards ~ .menu-order {
+.menu-cards ~ .menu-order {
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,7 +381,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .menu .menu-cards {
+  .menu-cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -395,7 +394,7 @@
     height: auto;
     border-radius: 30px;
   }
-  .menu .menu-cards > .menu-logo {
+  .menu-cards .menu-logo {
     margin-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -405,15 +404,15 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .menu .menu-cards > .menu-logo h3 {
+  .menu-cards h3 {
     font-family: 'Shrikhand', cursive;
     font-size: 30px;
   }
-  .menu .menu-cards > .menu-logo i {
+  .menu-cards i {
     margin-left: auto;
     font-size: 25px;
   }
-  .menu .menu-cards > .menu-logo .menu-cards {
+  .menu-cards .menu-cards {
     border: 1px solid black;
     display: -webkit-box;
     display: -ms-flexbox;
