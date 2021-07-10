@@ -358,6 +358,26 @@
           transition-duration: 500ms;
 }
 
+.menuItems .menu_box :hover .tick i {
+  color: white;
+}
+
+.menuItems :hover {
+  cursor: pointer;
+}
+
+.menuItems :hover .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuItems :hover .tick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu-order {
   border-radius: 50px;
   display: -webkit-box;

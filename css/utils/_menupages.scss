@@ -93,7 +93,19 @@
                 position: relative;
                 transform-origin: right;
                 transition-duration: 500ms;
+                i {
+                    color: white;
+                }
             }
+        }
+    }
+    :hover {
+        cursor: pointer;
+        .price {
+            display: flex;
+        }
+        .tick {
+            display: flex;
         }
     }
 }
