@@ -73,7 +73,7 @@ a {
         }
     }
     @include mobile-only{
-        @include nav-center
+        @include nav-center;
         flex-direction: column;
         height: auto;
     }
@@ -83,7 +83,7 @@ a {
         margin: 0px;
         position: relative;
         width: 100%;
-        @include nav-center
+        @include nav-center;
         font-weight: 500;
         i {
             margin-right: 0px;
@@ -158,8 +158,6 @@ a {
             padding: 5px;
             width: 4%;
             margin-right: 30px;
-        }
-        i {
         }
         .placeholder {
             padding: 5px;
@@ -436,7 +434,7 @@ a {
                     margin-left: -99px;
                 }
                 >.check {
-                @include nav-center
+                @include nav-center;
                 background-color: $tertiary-color;
                 border-radius: 0px 10px 10px 0px;
                 position: absolute;
