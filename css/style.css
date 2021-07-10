@@ -274,6 +274,10 @@
   width: auto;
 }
 
+.menu_box :hover {
+  cursor: pointer;
+}
+
 .menu_box .menuItems__description {
   border: 1px solid black;
   margin-right: auto;
@@ -283,24 +287,10 @@
   text-decoration: none;
 }
 
-.menu_box .menuItems__confirmation {
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .menu_box .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -327,13 +317,13 @@
   display: none;
 }
 
-.menu_box :hover .price {
+:hover .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.menu_box :hover .tick {
+:hover .tick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,47 +348,20 @@
           transition-duration: 500ms;
 }
 
-.menu_box :hover i {
+:hover i {
   color: white;
 }
 
 .menu-order {
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #9356DC;
   color: white;
   background: -webkit-gradient(linear, left bottom, left top, from(#8641d8), to(#ff93e1));
   background: linear-gradient(to top, #8641d8, #ff93e1);
 }
 
-@media screen and (max-width: 768px) {
-  .menu-order {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: auto;
-    border-radius: 30px;
-  }
+.menu-order p {
+  padding: 10px;
 }
 
 /*General-selector*/
