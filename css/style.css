@@ -239,7 +239,7 @@
   font-size: 25px;
 }
 
-.menu-cards {
+.menuItems {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -249,14 +249,14 @@
   width: 100%;
 }
 
-.menu-cards h4 {
+.menuItems h4 {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   -webkit-text-decoration-color: #9ff8d5;
           text-decoration-color: #9ff8d5;
 }
 
-.menu-cards > .menu_box {
+.menuItems .menu_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,15 +276,15 @@
   width: auto;
 }
 
-.menu-cards > .menu_box:hover {
+.menuItems .menu_box:hover {
   cursor: pointer;
 }
 
-.menu-cards > .menu_box .selection {
+.menuItems .menu_box .menuItems__description {
   margin-right: auto;
 }
 
-.menu-cards > .menu_box .selection__box {
+.menuItems .menu_box .menuItems__confirmation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,26 +296,26 @@
       flex-wrap: wrap;
 }
 
-.menu-cards > .menu_box .price {
+.menuItems .menu_box .price {
   display: block;
 }
 
-.menu-cards > .menu_box .price p {
+.menuItems .menu_box .price p {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
 }
 
-.menu-cards > .menu_box .check {
+.menuItems .menu_box .check {
   display: none;
   color: white;
 }
 
-.menu-cards > .menu_box :hover > .price {
+.menuItems .menu_box :hover > .price {
   display: inline-block;
   margin-left: -99px;
 }
 
-.menu-cards > .menu_box :hover > .check {
+.menuItems .menu_box :hover > .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,7 +345,7 @@
           transition-duration: 500ms;
 }
 
-.menu-cards > .menu_box :hover i:hover {
+.menuItems .menu_box :hover i:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,7 +353,7 @@
   color: white;
 }
 
-.menu-cards ~ .menu-order {
+.menuItems ~ .menu-order {
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,7 +381,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .menu-cards {
+  .menuItems {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -394,7 +394,7 @@
     height: auto;
     border-radius: 30px;
   }
-  .menu-cards .menu-logo {
+  .menuItems .menu-logo {
     margin-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -404,15 +404,15 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .menu-cards h3 {
+  .menuItems h3 {
     font-family: 'Shrikhand', cursive;
     font-size: 30px;
   }
-  .menu-cards i {
+  .menuItems i {
     margin-left: auto;
     font-size: 25px;
   }
-  .menu-cards .menu-cards {
+  .menuItems .menu-cards {
     border: 1px solid black;
     display: -webkit-box;
     display: -ms-flexbox;

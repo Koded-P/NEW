@@ -40,7 +40,7 @@
             font-size: 25px;
         }
     }
-    .menu-cards {
+    .menuItems {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
@@ -50,7 +50,7 @@
         text-decoration-thickness: 5px;
         text-decoration-color: lighten(#0fd687, 35%);
         }
-        >.menu_box {
+        .menu_box {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -64,10 +64,10 @@
         &:hover {
             cursor: pointer;
         }
-        .selection {
+        .menuItems__description {
             margin-right: auto;
         }
-        .selection__box {
+        .menuItems__confirmation {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
