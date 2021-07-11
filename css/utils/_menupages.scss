@@ -15,10 +15,8 @@
 
 /*menu*/
 .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
     @include mobile-only {
+    border: 1px solid black;
     margin-top: -100px;
     display: flex;
     flex-direction: column;

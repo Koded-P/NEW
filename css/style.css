@@ -214,15 +214,9 @@
 }
 
 /*menu*/
-.menu {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
 @media screen and (max-width: 768px) {
   .menu {
+    border: 1px solid black;
     margin-top: -100px;
     display: -webkit-box;
     display: -ms-flexbox;
