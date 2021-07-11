@@ -1012,7 +1012,6 @@ a {
 }
 
 .proj-grid .card-box .like-btn {
-  border: 1px solid black;
   margin-left: auto;
   cursor: pointer;
   display: -webkit-box;
@@ -1029,7 +1028,6 @@ a {
 }
 
 .proj-grid .card-box .empty__heart {
-  border: 1px solid black;
   position: absolute;
   z-index: 100;
   margin-bottom: 0px;
@@ -1059,7 +1057,6 @@ a {
 }
 
 .proj-grid:nth-child(2) img {
-  border: 1px solid black;
   height: 250px;
   max-width: 100%;
   -o-object-fit: cover;
