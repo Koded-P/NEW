@@ -227,6 +227,7 @@
       flex-wrap: wrap;
   background-color: #F2F2F2;
   border-radius: 20px 20px 0px 0px;
+  padding: 10px;
 }
 
 .menu .menu-logo {
@@ -282,7 +283,6 @@
           box-shadow: 0px 10px 10px 0px #cccccc;
   width: auto;
   margin-bottom: 50px;
-  margin-top: 50px;
 }
 
 .menu_box:hover {
@@ -354,18 +354,17 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border: 1px solid black;
   width: 100%;
   padding: 7px;
 }
 
 .menu_box .menuItems__description > .title {
   text-decoration: none;
-  border: 1px solid black;
+  font-weight: 600;
 }
 
 .menu_box .menuItems__description > .subtitle {
-  border: 1px solid black;
+  font-weight: 400;
 }
 
 .menu_box .price {
