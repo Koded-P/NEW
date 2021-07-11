@@ -93,7 +93,20 @@
   }
 }
 
-@keyframes loading-2 {
+@-webkit-keyframes fillheart {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1.75);
+            transform: scale(1.75);
+  }
+}
+
+@keyframes fillheart {
   from {
     opacity: 0;
     -webkit-transform: scale(1);
@@ -1026,8 +1039,8 @@ a {
   display: flex;
   position: absolute;
   background-color: linear-gradient(to top, #9b63df, #ff93e1);
-  -webkit-animation: loading-2;
-          animation: loading-2;
+  -webkit-animation: fillheart;
+          animation: fillheart;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-transition: all 0.4s ease-in-out;

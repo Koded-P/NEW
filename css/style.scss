@@ -311,7 +311,7 @@ a {
                 display: flex;
                 position: absolute;
                 background-color: linear-gradient(to top, lighten($primary-color, 3%), lighten($secondary-color, 5%));
-                animation: loading-2;
+                animation: fillheart;
                 animation-duration: 5s;
                 transition: all 0.4s ease-in-out;
             }
