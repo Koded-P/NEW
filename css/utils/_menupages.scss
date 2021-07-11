@@ -67,6 +67,11 @@
             border-radius: 0px 10px 10px 0px;
             transform-origin: right;
             transition-duration: 500ms;
+            animation: itemAppear .6s;
+            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+            animation-fill-mode: both;
+            transform: scale(0);
+            max-width: 100%;
             width: 25%;
             i {
                 display: flex;
