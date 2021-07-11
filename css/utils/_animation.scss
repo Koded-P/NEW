@@ -36,12 +36,12 @@
 }
 @keyframes fillheart {
     0% {
-        transform: translate(-30px, 0);
-        color: $base-color;
+        transform: translate(0, 0px);
+        color: linear-gradient(darken($base-color, 10%), darken($base-color, 5%));
     }
     100% {
-        transform: translate(-30px, -30px);
-        color: $primary-color;
+        transform: translate(0px, -30px);
+        color: linear-gradient(darken($base-color, 10%), darken($base-color, 5%));
     }
 }
 @keyframes fadeIn {
