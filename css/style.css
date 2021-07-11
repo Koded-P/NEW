@@ -93,29 +93,16 @@
   }
 }
 
-@-webkit-keyframes fillheart {
-  0% {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
-    color: linear-gradient(#d9d9d9, #e5e5e5);
+@keyframes loading-2 {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  100% {
-    -webkit-transform: translate(0px, -30px);
-            transform: translate(0px, -30px);
-    color: linear-gradient(#d9d9d9, #e5e5e5);
-  }
-}
-
-@keyframes fillheart {
-  0% {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px);
-    color: linear-gradient(#d9d9d9, #e5e5e5);
-  }
-  100% {
-    -webkit-transform: translate(0px, -30px);
-            transform: translate(0px, -30px);
-    color: linear-gradient(#d9d9d9, #e5e5e5);
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1.75);
+            transform: scale(1.75);
   }
 }
 
@@ -1039,20 +1026,12 @@ a {
   display: flex;
   position: absolute;
   background-color: linear-gradient(to top, #9b63df, #ff93e1);
-  -webkit-animation: fillheart;
-          animation: fillheart;
+  -webkit-animation: loading-2;
+          animation: loading-2;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.proj-grid .card-box .empty__heart {
-  position: relative;
-}
-
-.proj-grid .card-box .empty__heart:hover {
-  display: none;
 }
 
 .proj-grid .card-box i {
