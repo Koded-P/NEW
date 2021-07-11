@@ -1029,23 +1029,10 @@ a {
 
 .proj-grid .card-box .full__heart {
   opacity: 0;
-  margin-top: 0px;
 }
 
 .proj-grid .card-box .full__heart:hover {
   opacity: 1;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.proj-grid .card-box .empty__heart {
-  margin: -3px;
-  opacity: 1;
-  margin-top: 0px;
-}
-
-.proj-grid .card-box .empty__heart:hover {
-  opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }

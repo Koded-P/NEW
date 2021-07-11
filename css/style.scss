@@ -305,18 +305,8 @@ a {
         }
         .full__heart {
             opacity: 0;
-            margin-top: 0px;
             &:hover {
                 opacity: 1;
-                transition: all 0.4s ease-in-out; 
-            }
-        }
-        .empty__heart {
-            margin: -3px;
-            opacity: 1;
-            margin-top: 0px;
-            &:hover {
-                opacity: 0;
                 transition: all 0.4s ease-in-out; 
             }
         }
