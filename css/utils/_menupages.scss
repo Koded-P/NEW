@@ -15,6 +15,10 @@
 
 /*menu*/
 .menu {
+    display: grid;
+    grid-template-rows: 2, 1fr;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
     @include mobile-only {
     border: 1px solid black;
     margin-top: -100px;
@@ -24,7 +28,11 @@
     background-color: $base-color;
     border-radius: 20px 20px 0px 0px;
     }
-    .menu-logo {
+    .menu-logo {    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include mobile-only{
         margin-top: 15px;
         width: 100%;
         display: flex;
@@ -35,14 +43,18 @@
     h3 {
         font-family: 'Shrikhand', cursive;
         font-size: 30px;
+        width: 100%;
+        border: 1px solid black;
     }
     i {
+        border: 1px solid black;
         margin-left: auto;
         font-size: 25px;
     }
 }
 .menuItems {
-        width: 100%;
+    border: 1px solid black;
+    width: 100%;
         h4 {
         text-decoration: underline;
         text-decoration-thickness: 5px;
@@ -127,4 +139,5 @@
         justify-content: center;
         padding: 10px;
     }
+}
 }

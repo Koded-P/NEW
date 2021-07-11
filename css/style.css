@@ -214,6 +214,17 @@
 }
 
 /*menu*/
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2, 1fr;
+      grid-template-rows: 2, 1fr;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .menu {
     border: 1px solid black;
@@ -233,8 +244,6 @@
 }
 
 .menu .menu-logo {
-  margin-top: 15px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,36 +251,57 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.menu h3 {
-  font-family: 'Shrikhand', cursive;
-  font-size: 30px;
+@media screen and (max-width: 768px) {
+  .menu .menu-logo {
+    margin-top: 15px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.menu i {
+.menu .menu-logo h3 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 30px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.menu .menu-logo i {
+  border: 1px solid black;
   margin-left: auto;
   font-size: 25px;
 }
 
-.menuItems {
+.menu .menuItems {
+  border: 1px solid black;
   width: 100%;
 }
 
-.menuItems h4 {
+.menu .menuItems h4 {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   -webkit-text-decoration-color: #9ff8d5;
           text-decoration-color: #9ff8d5;
 }
 
-.menu_box {
+.menu .menu_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,11 +317,11 @@
   margin-bottom: 10px;
 }
 
-.menu_box:hover {
+.menu .menu_box:hover {
   cursor: pointer;
 }
 
-.menu_box:hover .price {
+.menu .menu_box:hover .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,7 +331,7 @@
           flex-direction: row;
 }
 
-.menu_box:hover .tick {
+.menu .menu_box:hover .tick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,7 +357,7 @@
   width: 25%;
 }
 
-.menu_box:hover .tick i {
+.menu .menu_box:hover .tick i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,7 +375,7 @@
           transition-duration: 1s;
 }
 
-.menu_box .menuItems__description {
+.menu .menu_box .menuItems__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,16 +390,16 @@
   padding: 7px;
 }
 
-.menu_box .menuItems__description > .title {
+.menu .menu_box .menuItems__description > .title {
   text-decoration: none;
   font-weight: 600;
 }
 
-.menu_box .menuItems__description > .subtitle {
+.menu .menu_box .menuItems__description > .subtitle {
   font-weight: 400;
 }
 
-.menu_box .price {
+.menu .menu_box .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,15 +422,15 @@
   width: 15%;
 }
 
-.menu_box .price span {
+.menu .menu_box .price span {
   font-weight: 600;
 }
 
-.menu_box .tick {
+.menu .menu_box .tick {
   display: none;
 }
 
-.menu-order {
+.menu .menu-order {
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,7 +444,7 @@
           justify-content: center;
 }
 
-.menu-order .order {
+.menu .menu-order .order {
   border: 1px solid black;
   max-width: 50%;
   border-radius: 50px;
