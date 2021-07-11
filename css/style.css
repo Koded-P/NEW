@@ -237,9 +237,6 @@
 
 .menuItems {
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
 }
 
@@ -263,6 +260,8 @@
   -webkit-box-shadow: 0px 10px 10px 0px #cccccc;
           box-shadow: 0px 10px 10px 0px #cccccc;
   width: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .menu_box:hover {
@@ -273,6 +272,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .menu_box:hover .tick {
@@ -297,6 +300,7 @@
           transform-origin: right;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
+  width: 3rem;
 }
 
 .menu_box:hover .tick i {
@@ -304,15 +308,24 @@
 }
 
 .menu_box .menuItems__description {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
   border: 1px solid black;
 }
 
 .menu_box .menuItems__description h4 {
   text-decoration: none;
+  border: 1px solid black;
+}
+
+.menu_box .menuItems__description p {
+  border: 1px solid black;
 }
 
 .menu_box .price {
