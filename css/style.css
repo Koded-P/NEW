@@ -1029,18 +1029,15 @@ a {
 }
 
 .proj-grid .card-box .full__heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: linear-gradient(to top, #9b63df, #ff93e1);
-  position: relative;
+  position: absolute;
 }
 
 .proj-grid .card-box .full__heart:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: absolute;
   background-color: linear-gradient(to top, #9b63df, #ff93e1);
   -webkit-animation: fillheart;
           animation: fillheart;
@@ -1048,6 +1045,14 @@ a {
           animation-duration: 5s;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+.proj-grid .card-box .empty__heart {
+  position: relative;
+}
+
+.proj-grid .card-box .empty__heart:hover {
+  display: none;
 }
 
 .proj-grid .card-box i {

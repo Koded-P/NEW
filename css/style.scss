@@ -305,12 +305,11 @@ a {
             margin-right: 50px;
         }
         .full__heart {
-            display: flex;
             color: linear-gradient(to top, lighten($primary-color, 3%), lighten($secondary-color, 5%));;
-            position: relative;
+            position: absolute;
             &:hover {
                 display: flex;
-                position: relative;
+                position: absolute;
                 background-color: linear-gradient(to top, lighten($primary-color, 3%), lighten($secondary-color, 5%));
                 animation: fillheart;
                 animation-duration: 5s;
@@ -319,6 +318,10 @@ a {
             }
         }
         .empty__heart {
+            position: relative;
+            &:hover {
+                display: none;
+            }
         }
 
         i {
