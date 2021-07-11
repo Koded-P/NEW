@@ -83,11 +83,16 @@
     .menuItems__description {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         border: 1px solid black;
-        width: 90%;
-        padding: 0px;
-        h4 {
+        width: 100%;
+        padding: 7px;
+        >.title {
             text-decoration: none;
+            border: 1px solid black;
+        }
+        >.subtitle {
+            border: 1px solid black;
         }
     }
     .price {
