@@ -15,12 +15,17 @@
 
 /*menu*/
 .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include mobile-only {
     margin-top: -100px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: $base-color;
     border-radius: 20px 20px 0px 0px;
+    }
     .menu-logo {
         margin-top: 15px;
         width: 100%;
@@ -111,7 +116,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     .order {
         border: 1px solid black;
         max-width: 50%;
