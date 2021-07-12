@@ -300,6 +300,7 @@
   text-decoration-thickness: 5px;
   -webkit-text-decoration-color: #9ff8d5;
           text-decoration-color: #9ff8d5;
+  font-weight: 400;
 }
 
 .menu_box {
