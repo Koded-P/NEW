@@ -213,7 +213,7 @@
   border: 10px;
 }
 
-/*menu*/
+/*body*/
 .menu {
   display: -ms-grid;
   display: grid;
@@ -235,7 +235,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 1px solid black;
     margin-top: -100px;
     display: flex;
     flex-direction: column;
@@ -246,6 +245,7 @@
   }
 }
 
+/*page-header*/
 .menu-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,19 +283,15 @@
   font-family: 'Shrikhand', cursive;
   font-size: 30px;
   width: 100%;
-  border: 1px solid black;
 }
 
 .menu-logo i {
-  border: 1px solid black;
   margin-left: auto;
   font-size: 25px;
 }
 
-/*end-of-logo*/
-/*start-menu*/
+/*menu*/
 .menuItems {
-  border: 1px solid black;
   width: 100%;
 }
 
@@ -435,9 +431,8 @@
   display: none;
 }
 
-/*end-menu*/
 /*order-btn*/
-.menu-order {
+.order-btn {
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,8 +446,7 @@
           justify-content: center;
 }
 
-.menu-order .order {
-  border: 1px solid black;
+.order-btn .link {
   max-width: 50%;
   border-radius: 50px;
   background-color: #9356DC;
