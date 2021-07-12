@@ -227,8 +227,6 @@
 
 @media screen and (max-width: 768px) {
   .menu {
-    border: 1px solid black;
-    margin-top: -100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -236,6 +234,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border: 1px solid black;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     background-color: #F2F2F2;
@@ -243,7 +245,7 @@
   }
 }
 
-.menu .menu-logo {
+.menu-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +259,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .menu .menu-logo {
+  .menu-logo {
     margin-top: 15px;
     width: 100%;
     display: -webkit-box;
@@ -276,32 +278,34 @@
   }
 }
 
-.menu .menu-logo h3 {
+.menu-logo h3 {
   font-family: 'Shrikhand', cursive;
   font-size: 30px;
   width: 100%;
   border: 1px solid black;
 }
 
-.menu .menu-logo i {
+.menu-logo i {
   border: 1px solid black;
   margin-left: auto;
   font-size: 25px;
 }
 
-.menu .menuItems {
+/*end-of-logo*/
+/*start-menu*/
+.menuItems {
   border: 1px solid black;
   width: 100%;
 }
 
-.menu .menuItems h4 {
+.menuItems h4 {
   text-decoration: underline;
   text-decoration-thickness: 5px;
   -webkit-text-decoration-color: #9ff8d5;
           text-decoration-color: #9ff8d5;
 }
 
-.menu .menu_box {
+.menu_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,11 +321,11 @@
   margin-bottom: 10px;
 }
 
-.menu .menu_box:hover {
+.menu_box:hover {
   cursor: pointer;
 }
 
-.menu .menu_box:hover .price {
+.menu_box:hover .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +335,7 @@
           flex-direction: row;
 }
 
-.menu .menu_box:hover .tick {
+.menu_box:hover .tick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,7 +361,7 @@
   width: 25%;
 }
 
-.menu .menu_box:hover .tick i {
+.menu_box:hover .tick i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +379,7 @@
           transition-duration: 1s;
 }
 
-.menu .menu_box .menuItems__description {
+.menu_box .menuItems__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,16 +394,16 @@
   padding: 7px;
 }
 
-.menu .menu_box .menuItems__description > .title {
+.menu_box .menuItems__description > .title {
   text-decoration: none;
   font-weight: 600;
 }
 
-.menu .menu_box .menuItems__description > .subtitle {
+.menu_box .menuItems__description > .subtitle {
   font-weight: 400;
 }
 
-.menu .menu_box .price {
+.menu_box .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,15 +426,17 @@
   width: 15%;
 }
 
-.menu .menu_box .price span {
+.menu_box .price span {
   font-weight: 600;
 }
 
-.menu .menu_box .tick {
+.menu_box .tick {
   display: none;
 }
 
-.menu .menu-order {
+/*end-menu*/
+/*order-btn*/
+.menu-order {
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,7 +450,7 @@
           justify-content: center;
 }
 
-.menu .menu-order .order {
+.menu-order .order {
   border: 1px solid black;
   max-width: 50%;
   border-radius: 50px;
