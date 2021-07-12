@@ -433,37 +433,18 @@
 
 /*order-btn*/
 .order-btn {
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  border: 1px solid black;
 }
 
 .order-btn .link {
-  max-width: 50%;
+  max-width: auto;
   border-radius: 50px;
   background-color: #9356DC;
   color: white;
   background: -webkit-gradient(linear, left bottom, left top, from(#8641d8), to(#ff93e1));
   background: linear-gradient(to top, #8641d8, #ff93e1);
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 10px;
 }
 
