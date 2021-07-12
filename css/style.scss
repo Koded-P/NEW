@@ -308,8 +308,10 @@ a {
             z-index: 100;
             margin-bottom: 0px;
             margin-left: 25px;
+            color: $primary-color;
             &:hover {
                 i {
+                color: $primary-color;
                 display: flex;
                 animation: fillheart;
                 animation-duration: 5s;
@@ -319,7 +321,7 @@ a {
         }
         .full__heart {
             margin-left: 25px;
-        }
+            color: $primary-color;        }
     }
         &:nth-child(2) {
             display: flex;
