@@ -394,10 +394,16 @@
 .menu_box .menuItems__description > .title {
   text-decoration: none;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu_box .menuItems__description > .subtitle {
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu_box .price {
@@ -434,7 +440,6 @@
 /*order-btn*/
 .order-btn {
   text-align: center;
-  border: 1px solid black;
 }
 
 .order-btn .link {
